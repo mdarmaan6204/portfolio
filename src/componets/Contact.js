@@ -8,9 +8,11 @@ import {
 
 export const Contact = () => {
   const form = useRef();
-  const [msgSend, setMsgSend] = useState("Successfully Sent!");
+  const [msgSend, setMsgSend] = useState("SUCCESSFULLY SENT!");
   const [showMsgDiv, setShowMsgDiv] = useState(false);
-  const [msgClass, SetMsgClass] = useState("");
+  const [msgClass, SetMsgClass] = useState(
+    "bg-slate-100 text-lg w-60 h-12 p-2 pl-10 font-extrabold rounded-lg mx-auto mt-5 text-green-600"
+  );
 
   const SuccessMsg = () => {
     return (
@@ -23,13 +25,13 @@ export const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setShowMsgDiv(true);
+    console.log(form.current);
     emailjs
       .sendForm(SERVICE_ID_EMAIL, TEMPLATE_ID_EMAIL, form.current, {
         publicKey: PUBLIC_KEY_EMAIL,
       })
       .then(
         () => {
-          setMsgSend("SUCCESSFULLY SEND!");
           SetMsgClass(
             "bg-slate-100 text-lg w-60 h-12 p-2 pl-10 font-extrabold rounded-lg mx-auto mt-5 text-green-600"
           );
