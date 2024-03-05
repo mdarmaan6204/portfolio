@@ -10,9 +10,9 @@ import YT_IMG from "../utilis/Youtube.png";
 
 const YoutubeCard = () => {
   return (
-    <div>
-      <div className="mb-32 flex w-3/4 h-[100]  ">
-        <div className=" m-4 p-4 w-1/2">
+    <div className="mb-32 mt-20 mx-auto w-[1000px]">
+      <div className="mb-32 flex  h-[100]  ">
+        <div className=" m-4 p-4">
           <p className="font-extrabold text-3xl font-serif mx-16">
             Youtube Clone
           </p>
@@ -42,7 +42,7 @@ const YoutubeCard = () => {
               React
             </li>
             <li className="border rounded-lg shadow-sm px-2 shadow-gray-400  my-2 font-bold h-7">
-              Tailwind
+              Redux
             </li>
           </ul>
           <div className="mt-4 flex ">

@@ -24,7 +24,7 @@ const Bio = () => {
               Front-end Web Developer
             </p>
             <p className="font-serif my-2">
-              Hi , I'm Md Armaan. A passionate Front-end Web Devopment based in
+              Hi , I'm <span className="font-extrabold text-lg text-">Md Armaan</span>. A passionate Front-end Web Devopment based in
               Dhanbad , Jharkhand.
             </p>
             <div className="flex">

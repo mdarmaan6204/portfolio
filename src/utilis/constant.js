@@ -20,4 +20,8 @@ export const LIVE_DEMO_ICON =
 export const NetflixGPT_URL = "https://netflix-gpt-h6ca.onrender.com";
 export const NetflixGPT_Github = "https://github.com/mdarmaan6204/netflix-gpt";
 export const YT_URL = "https://youtube-clone-9bvk.onrender.com/";
-export const YT_Github = "https://github.com/mdarmaan6204/youtube-clone"
+export const YT_Github = "https://github.com/mdarmaan6204/youtube-clone";
+
+export const PUBLIC_KEY_EMAIL = "7RYfC6eMQdZZqziil";
+export const SERVICE_ID_EMAIL = "service_5u1v0ww";
+export const TEMPLATE_ID_EMAIL = "template_9y1gmub";

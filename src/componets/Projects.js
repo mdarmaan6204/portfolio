@@ -4,7 +4,7 @@ import YoutubeCard from "./YoutubeCard";
 
 const Projects = () => {
   return (
-    <div className="mx-52 my-20  grid w-[90%]">
+    <div className="">
       <NetflixGPTCard />
       <YoutubeCard />
     </div>

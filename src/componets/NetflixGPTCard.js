@@ -5,16 +5,16 @@ import NetflixGPT_IMG from "../utilis/NetflixGPT.png"
 
 const NetflixGPTCard = () => {
   return (
-    <div className= "">
-        <div className="mb-32 flex w-3/4 h-[100]  ">
-        <div className="m-4 p-4 w-11/12 ">
+    <div className="mb-32 mt-20 mx-auto w-[1000px]">
+        <div className="flex">
+        <div className="m-4 p-4">
           <img
             alt="NetflixGPT"
             src={NetflixGPT_IMG}
             className="relative h-80 rounded-lg"
           ></img>
         </div>
-        <div className=" m-4 p-4 w-1/2">
+        <div className="m-4 p-4 w-1/2">
           <p className="font-extrabold text-3xl font-serif mx-16">NetflixGPT</p>
           <p className="font-thin italic mb-2 mx-16"> Find your next binge!</p>
           <p className="h-auto font-medium">
