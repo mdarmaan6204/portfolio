@@ -18,15 +18,11 @@ const Intro = () => {
           <p className="text-lg p-2 ">
             I'm a software engineer based in Dhanbad, Jharkhand. I enjoy
             creating things that live on the internet, whether that be websites,
-            applications, or anything in between. I have been working for 3
-            year, with a demonstrated history of working in the Computer
-            Software industry. Skilled in Front-end Development. I have 3 years
-            of experience in HTML, CSS, SCSS, JavaScript, Bootstrap, tailwind
-            CSS, StyledComponent, React JS and Next JS. Hence, I have
-            successfully completed several web projects from scratch. Yet, I
-            learn continuously and never stop exploring new technologies. So, I
-            have also gained knowledge of Node JS, Express JS, Mongo DB, Python,
-            firebase and React Native with time.
+            applications, or anything in between. Motivated B.Tech student at
+            BIT Sindri with a strong passion for coding, data structures,
+            algorithms, and machine learning. Skilled in DBMS, OS, and actively
+            engaged in DSA practice on platforms like Hackerrank, GeeksforGeeks,
+            and Code Studio
           </p>
         </div>
       </div>

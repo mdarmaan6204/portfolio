@@ -25,7 +25,7 @@ const Education = () => {
           <p className="mt-2 text-cyan-500"> Giridih , Jharkhand</p>
           <p className="mt-2 text-slate-700">Intermediate (PCM)</p>
         </div>
-        <div className="mt-10">
+        <div className="my-10">
           <div className="flex">
             <p className="font-bold text-xl font-serif">
               B.N.Saha Public School
