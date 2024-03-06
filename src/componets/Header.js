@@ -4,20 +4,20 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="">
-      <div className="flex justify-between p-2  my-2 shadow-lg font-bold">
+      <div className="flex justify-between px-2 py-4 my-2 shadow-xl font-bold h-16 rounded-lg">
         <Link to ="/" className="ml-2">Armaan.dev</Link>
         <ul className="flex mx-4">
           <Link to="/">
-            <li className="mx-4">Home</li>
+            <li className="mx-4 hover:bg-slate-400  w-16 h-8 rounded-xl px-2">Home</li>
           </Link>
           <Link to="/projects">
-            <li className="mx-4">Projects</li>
+            <li className="mx-4  hover:bg-slate-400  w-20 h-8 rounded-xl px-2">Projects</li>
           </Link>
           <Link to="/about">
-            <li className="mx-4">About</li>
+            <li className="mx-4  hover:bg-slate-400  w-16 h-8 rounded-xl px-2">About</li>
           </Link>
           <Link to="/contact">
-            <li className="mx-4">Contact</li>
+            <li className="mx-4  hover:bg-slate-400  w-20 h-8 rounded-xl px-2">Contact</li>
           </Link>
         </ul>
       </div>
