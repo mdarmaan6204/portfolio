@@ -16,7 +16,7 @@ import Armaan_Pic from "../utilis/Armaan.png";
 
 const Bio = () => {
   return (
-    <div className="grid">
+    <div className="-mt-28 dark:text-white">
       <div className="w-2/3 m-auto my-28 p-4">
         <div className="flex justify-between m-4">
           <div className="w-4/12 my-6 ml-20">
@@ -29,10 +29,10 @@ const Bio = () => {
             </p>
             <div className="flex">
               <Link to={LN_PROFILE_URL} target="_blank">
-                <img alt="ln" className="mr-2 h-5" src={LN_ICON} />
+                <img alt="ln" className="mr-2 h-5  dark:bg-white dark:rounded-sm" src={LN_ICON} />
               </Link>
               <Link to={GITHUB_PROFILE_URL} target="_blank">
-                <img alt="git" className="h-5" src={GIT_ICON} />
+                <img alt="git" className="h-5  dark:bg-white dark:rounded-full" src={GIT_ICON} />
               </Link>
             </div>
           </div>
@@ -49,7 +49,7 @@ const Bio = () => {
           <pre className="font-extrabold">Tech Stack |</pre>
           <ul className="flex justify">
             <li className="my-1 mx-4">
-              <img alt="html" className="h-5" src={HTML_ICON} title="HTML"
+              <img alt="html" className="h-5  dark:bg-white dark:rounded-sm" src={HTML_ICON} title="HTML"
               ></img>
             </li>
 
@@ -76,7 +76,7 @@ const Bio = () => {
           </ul>
         </div>
       </div>
-    </div>
+      </div>
   );
 };
 

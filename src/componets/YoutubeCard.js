@@ -10,8 +10,8 @@ import YT_IMG from "../utilis/Youtube.png";
 
 const YoutubeCard = () => {
   return (
-    <div className="mb-32 mt-20 mx-auto w-[1000px]">
-      <div className="mb-32 flex  h-[100]  ">
+    <div className="mt-20 mx-auto w-[1000px] hover:border-4 border-white hover:scale-110 delay-200">
+      <div className="mb-4 flex">
         <div className=" m-4 p-4">
           <p className="font-extrabold text-3xl font-serif mx-16">
             Youtube Clone
@@ -49,7 +49,7 @@ const YoutubeCard = () => {
             <p className="mx-2 font-bold text-lg">Code</p>
             <Link to={YT_Github} target="_blank">
               <img
-                className="h-6 mr-6"
+                className="h-6 mr-6  dark:bg-white dark:rounded-full"
                 alt="github"
                 title="repo"
                 src={GIT_ICON}
@@ -58,9 +58,8 @@ const YoutubeCard = () => {
 
             <p className="mx-2 font-bold text-lg">Live Demo</p>
             <Link to={YT_URL} target="_blank">
-              {" "}
               <img
-                className="h-6"
+                className="h-6  dark:bg-white dark:rounded-full"
                 alt="github"
                 title="website"
                 src={LIVE_DEMO_ICON}
@@ -70,9 +69,9 @@ const YoutubeCard = () => {
         </div>
         <div className="m-4 p-4 w-11/12 ">
           <img
-            alt="NetflixGPT"
+            alt="YT-Clone"
             src={YT_IMG}
-            className="relative h-80 rounded-lg"
+            className="relative h-80 rounded-lg "
           ></img>
         </div>
       </div>

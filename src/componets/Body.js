@@ -3,15 +3,16 @@ import Bio from "./Bio";
 import Projects from "./Projects";
 import Intro from "./Intro";
 import Work from "./Work";
-import Portfolio from "./Portfolio";
+
 const Body = () => {
   return (
-    <div>
+    <div className="dark">
+      <div className="dark:bg-slate-800 dark:text-white">
       <Bio />
       <Intro />
-      <Portfolio/>
       <Projects />
-      <Work/>
+      {/* <Work/> */}
+      </div>
     </div>
   );
 };

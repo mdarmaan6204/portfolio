@@ -21,6 +21,8 @@ export const NetflixGPT_URL = "https://netflix-gpt-h6ca.onrender.com";
 export const NetflixGPT_Github = "https://github.com/mdarmaan6204/netflix-gpt";
 export const YT_URL = "https://youtube-clone-9bvk.onrender.com/";
 export const YT_Github = "https://github.com/mdarmaan6204/youtube-clone";
+export const AMAZON_Github = "https://github.com/mdarmaan6204/Amazon-Clone";
+export const AMAZON_URL = "https://mdarmaan6204.github.io/Amazon-Clone";
 
 export const PUBLIC_KEY_EMAIL = "7RYfC6eMQdZZqziil";
 export const SERVICE_ID_EMAIL = "service_5u1v0ww";

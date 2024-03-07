@@ -2,10 +2,10 @@ import React from "react";
 
 const Intro = () => {
   return (
-    <div>
+    <div className="">
       <div className="m-4 p-4 my-20">
         <div className="mx-52 w-1/2 mt-4 mb-4">
-          <p className="font-mono my-20px text-slate-500 text-lg p-2">
+          <p className="font-mono my-20px text-slate-500 text-lg p-2 dark:text-slate-300">
             Hey,I'm
           </p>
         </div>

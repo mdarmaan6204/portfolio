@@ -5,13 +5,13 @@ import NetflixGPT_IMG from "../utilis/NetflixGPT.png"
 
 const NetflixGPTCard = () => {
   return (
-    <div className="mb-32 mt-20 mx-auto w-[1000px]">
+    <div className="mb-32 mt-20 mx-auto w-[1000px]  hover:border-4 border-white hover:scale-110 delay-200 ">
         <div className="flex">
         <div className="m-4 p-4">
           <img
             alt="NetflixGPT"
             src={NetflixGPT_IMG}
-            className="relative h-80 rounded-lg"
+            className="relative h-80 rounded-lg "
           ></img>
         </div>
         <div className="m-4 p-4 w-1/2">
@@ -36,7 +36,7 @@ const NetflixGPTCard = () => {
             <p className="mx-2 font-bold text-lg">Code</p>
             <Link to={NetflixGPT_Github} target="_blank">
               <img
-                className="h-6 mr-6"
+                className="h-6 mr-6 dark:bg-white dark:rounded-full"
                 alt="github"
                 title="repo"
                 src={GIT_ICON}
@@ -45,7 +45,7 @@ const NetflixGPTCard = () => {
             <p className="mx-2 font-bold text-lg">Live Demo</p>
             <Link to={NetflixGPT_URL} target="_blank">
               <img
-                className="h-6"
+                className="h-6  dark:bg-white dark:rounded-full"
                 alt="github"
                 title="website"
                 src={LIVE_DEMO_ICON}
