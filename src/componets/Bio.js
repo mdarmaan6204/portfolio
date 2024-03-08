@@ -29,17 +29,20 @@ const Bio = () => {
             </p>
             <div className="flex">
               <Link to={LN_PROFILE_URL} target="_blank">
-                <img alt="ln" className="mr-2 h-5  dark:bg-white dark:rounded-sm" src={LN_ICON} />
+                <img alt="ln"
+                title ="Profile"
+                 className="mr-2 h-5  dark:bg-white dark:rounded-sm hover:scale-125" src={LN_ICON} />
               </Link>
               <Link to={GITHUB_PROFILE_URL} target="_blank">
-                <img alt="git" className="h-5  dark:bg-white dark:rounded-full" src={GIT_ICON} />
+                <img alt="git"
+                title="Github" className="h-5 dark:bg-white dark:rounded-full hover:scale-125" src={GIT_ICON} />
               </Link>
             </div>
           </div>
 
           <div className="my-6">
             <img
-              className="h-80 border rounded-full mr-40 shadow-2xl"
+              className="h-80 border rounded-full mr-40 shadow-2xl "
               src={Armaan_Pic}
               alt="profile"
             />

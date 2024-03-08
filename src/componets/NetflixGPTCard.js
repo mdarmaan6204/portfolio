@@ -5,7 +5,7 @@ import NetflixGPT_IMG from "../utilis/NetflixGPT.png"
 
 const NetflixGPTCard = () => {
   return (
-    <div className="mb-32 mt-20 mx-auto w-[1000px]  hover:border-4 border-white hover:scale-110 delay-200 ">
+    <div className="mb-32 mt-20 mx-auto w-[1000px]  hover:border-4 border-white hover:scale-110 delay-300 ">
         <div className="flex">
         <div className="m-4 p-4">
           <img

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const AmazonCard = () => {
   return (
-    <div className="mt-20 mb-100 mx-auto w-[1000px] hover:border-4 border-white hover:scale-110 delay-200">
+    <div className="mt-20 mb-100 mx-auto w-[1000px] hover:border-4 border-white hover:scale-110 delay-300">
       <div className="flex my-4">
         <div className="m-4 p-4">
           <img

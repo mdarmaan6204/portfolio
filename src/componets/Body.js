@@ -7,11 +7,11 @@ import Work from "./Work";
 const Body = () => {
   return (
     <div className="dark">
-      <div className="dark:bg-slate-800 dark:text-white">
+      <div className="dark:bg-slate-900 dark:text-white">
       <Bio />
       <Intro />
       <Projects />
-      {/* <Work/> */}
+      <Work/>
       </div>
     </div>
   );

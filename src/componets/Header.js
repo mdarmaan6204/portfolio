@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="bg-slate-200 dark">
-      <div className=" dark:bg-slate-800 dark:text-white flex justify-between px-2 py-4 mb-2 shadow-xl font-bold h-16">
+      <div className=" border-slate-500 dark:border-b-2 dark:bg-slate-800 dark:text-white flex justify-between px-2 py-4 mb-2 shadow-xl font-bold h-16">
         <Link to ="/" className="ml-2 hover:scale-110 ">Armaan.dev</Link>
         <ul className="flex mx-4">
           <Link to="/">

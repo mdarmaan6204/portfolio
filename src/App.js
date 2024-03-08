@@ -5,6 +5,7 @@ import Error from "./componets/Error";
 import Header from "./componets/Header";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Projects from "./componets/Projects";
+import Footer from "./componets/Footer";
 
 function App() {
   const AppLayout = () => {
@@ -12,6 +13,7 @@ function App() {
       <div>
         <Header />
         <Outlet />
+        <Footer/>
       </div>
     );
   };

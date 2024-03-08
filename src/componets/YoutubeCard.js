@@ -10,7 +10,7 @@ import YT_IMG from "../utilis/Youtube.png";
 
 const YoutubeCard = () => {
   return (
-    <div className="mt-20 mx-auto w-[1000px] hover:border-4 border-white hover:scale-110 delay-200">
+    <div className="mt-20 mx-auto w-[1000px] hover:border-4 border-white hover:scale-110 delay-300">
       <div className="mb-4 flex">
         <div className=" m-4 p-4">
           <p className="font-extrabold text-3xl font-serif mx-16">

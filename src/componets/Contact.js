@@ -48,10 +48,11 @@ export const Contact = () => {
 
   return (
     <div className="dark">
-      <div className="dark:bg-slate-800 -mt-10">
+      <div className="dark:bg-slate-900 -mt-2">
         {showMsgDiv && <SuccessMsg />}
-        <div className="dark:bg-white-800 rounded-xl w-5/12 mx-auto shadow-xl bg-teal-200 hover:bg-teal-300">
-          <form ref={form} onSubmit={sendEmail} className="my-16">
+       <div className="py-20">
+       <div className="dark:bg-white-800 rounded-xl w-5/12 mx-auto shadow-xl bg-teal-200 hover:bg-teal-300">
+          <form ref={form} onSubmit={sendEmail} className="">
             <label className="m-8 p-4 text-xl font-bold">Name :</label>
             <input
               type="text"
@@ -93,6 +94,7 @@ export const Contact = () => {
             <br />
           </form>
         </div>
+       </div>
       </div>
     </div>
   );

@@ -6,8 +6,8 @@ import Portfolio from "./Portfolio";
 
 const Projects = () => {
   return (
-    <div className="dark -mt-10 h-lvh">
-      <div className="dark:bg-slate-900 dark:text-white">
+    <div className="dark -mt-2">
+      <div className="dark:bg-slate-900 dark:text-white p-2 py-8">
         <Portfolio />
         <NetflixGPTCard />
         <YoutubeCard />

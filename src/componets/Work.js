@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Work = () => {
   return (
-    <div className="">
-      <div className="flex ml-40">
-        <p className="mb-10 font-bold text-3xl w-2/12 my-2 mx-20">
+    <div className="dark">
+      <div className="flex ml-40 p-10 dark:bg-slate-900">
+        <p className="mb-4 font-bold text-3xl w-2/12 my-2 mx-20">
           Interested in work together?
         </p>
 
