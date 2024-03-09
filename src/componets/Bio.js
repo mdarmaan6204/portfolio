@@ -12,7 +12,7 @@ import {
   TAILWIND_ICON,
 } from "../utilis/constant";
 import { Link } from "react-router-dom";
-import Armaan_Pic from "../utilis/Armaan.png";
+import Armaan_Pic from "../utilis/Armaan.jpg"
 
 const Bio = () => {
   return (

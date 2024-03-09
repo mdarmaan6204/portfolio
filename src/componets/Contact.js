@@ -6,24 +6,14 @@ import {
   PUBLIC_KEY_EMAIL,
 } from "../utilis/constant";
 import Dark from "../utilis/Dark";
+import Alert from "@mui/material/Alert";
 
 export const Contact = () => {
   const form = useRef();
-  const [msgSend, setMsgSend] = useState("SUCCESSFULLY SENT!");
   const [showMsgDiv, setShowMsgDiv] = useState(false);
-  const [msgClass, SetMsgClass] = useState(
-    "bg-slate-100 text-lg w-60 h-12 p-2 pl-10 font-extrabold rounded-lg mx-auto mt-5 text-green-600"
-  );
   const mode = useContext(Dark);
-  const dark = mode.darkMode;
 
-  const SuccessMsg = () => {
-    return (
-      <div className={msgClass}>
-        <p>{msgSend}</p>
-      </div>
-    );
-  };
+  const dark = mode.darkMode;
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -34,17 +24,8 @@ export const Contact = () => {
         publicKey: PUBLIC_KEY_EMAIL,
       })
       .then(
-        () => {
-          SetMsgClass(
-            "bg-slate-100 text-lg w-60 h-12 p-2 pl-10 font-extrabold rounded-lg mx-auto mt-5 text-green-600"
-          );
-        },
-        (error) => {
-          setMsgSend("ERROR!" + error.text);
-          SetMsgClass(
-            "bg-slate-100 text-xl w-60 h-12 p-2 pl-10 font-extrabold rounded-lg mx-auto mt-5 text-red-600"
-          );
-        }
+        () => {},
+        (error) => {}
       );
     e.target.reset();
   };
@@ -52,8 +33,18 @@ export const Contact = () => {
   return (
     <div className={`${dark && "dark"}`}>
       <div className="dark:bg-slate-900 -mt-2">
-        {showMsgDiv && <SuccessMsg />}
-        <div className="py-16">
+        <div className="pt-4">
+          {showMsgDiv && (
+            <Alert
+              variant="filled"
+              severity="success"
+              className="w-1/2 mx-auto"
+            >
+              SUCCESSFULLY SENT
+            </Alert>
+          )}
+        </div>
+        <div className="py-10">
           <div className="dark:bg-white-800 rounded-xl w-5/12 mx-auto shadow-xl bg-teal-200 hover:bg-teal-300">
             <form ref={form} onSubmit={sendEmail} className="">
               <label className="m-8 p-4 text-xl font-bold">Name :</label>

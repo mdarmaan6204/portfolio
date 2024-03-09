@@ -7,7 +7,7 @@ const Header = ({ mode, toggleMode }) => {
   const dark = mode;
 
   return (
-    <div className={`${dark && "dark"} bg-slate-200`}>
+    <div className={`${dark && "dark"} bg-slate-200 delay-150`}>
       <div className=" border-slate-500 dark:border-b-2 dark:bg-slate-800 dark:text-white flex justify-between px-2 py-4 mb-2 shadow-xl font-bold h-16">
         <Link to="/" className="ml-2 hover:scale-110 ">
           Armaan.dev

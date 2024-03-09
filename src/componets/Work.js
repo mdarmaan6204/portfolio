@@ -13,7 +13,7 @@ const Work = () => {
           Interested in work together?
         </p>
 
-        <button className="hover:scale-110 w-2/12 mb-10 ml-[450px] text-xl font-bold rounded-2xl h-10 p-2 mx-2 my-4 bg-gradient-to-l from-purple-500 to-indigo-500">
+        <button className="hover:scale-110 duration-300 w-2/12 mb-10 ml-[450px] text-xl font-bold rounded-2xl h-10 p-2 mx-2 my-4 bg-gradient-to-l from-purple-500 to-indigo-500">
           <Link to="/contact"> Send me a message</Link>
         </button>
       </div>
