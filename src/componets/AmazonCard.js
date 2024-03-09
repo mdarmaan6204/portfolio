@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 
 const AmazonCard = () => {
   return (
-    <div className="mt-20 mb-100 mx-auto w-[1000px] hover:border-4 border-white hover:scale-110 duration-500">
-      <div className="flex my-4">
-        <div className="m-4 p-4">
+    <div className="mb-32 mt-20 mx-auto md:w-[1000px] w-11/12 hover:border-4 border-white hover:scale-110 duration-500 ">
+        <div className="md:flex">
+        <div className="md:m-4 md:p-4 p-2 m-2">
           <img
             alt="Amazon-IMG"
             src={AMAZON_IMG}
-            className="relative h-80 rounded-lg"
+            className="md:h-80  rounded-lg "
           ></img>
         </div>
-        <div className="m-4 p-4 w-1/2">
+        <div className="md:m-4 md:p-4 p-2 m-2 md:w-1/2">
           <p className="font-extrabold text-3xl font-serif mx-16">
             Amazone Clone
           </p>

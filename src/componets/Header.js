@@ -9,7 +9,7 @@ const Header = ({ mode, toggleMode }) => {
   return (
     <div className={`${dark && "dark"} bg-slate-200 delay-150`}>
       <div className="w-lvw border-slate-500 dark:border-b-2 dark:bg-slate-800 dark:text-white flex justify-between px-2 py-4 mb-2 shadow-xl font-bold h-16">
-        <Link to="/" className="md:ml-2 hover:scale-110 text-sm  md:text-base">
+        <Link to="/" className="md:ml-2 hidden md:block lg:block hover:scale-110 text-sm  md:text-base">
           Armaan.dev
         </Link>
         <ul className="flex">
@@ -33,7 +33,7 @@ const Header = ({ mode, toggleMode }) => {
               Contact
             </li>
           </Link>
-          <li className="" onClick={toggleMode}>
+          <li className="md:mx-4 mx-2 px-2" onClick={toggleMode}>
             {mode ? <LightModeIcon /> : <DarkModeIcon />}
           </li>
         </ul>
