@@ -6,15 +6,24 @@ import Header from "./componets/Header";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Projects from "./componets/Projects";
 import Footer from "./componets/Footer";
+import Dark from "./utilis/Dark";
+import { useState } from "react";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const handleClick = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   const AppLayout = () => {
     return (
-      <div>
-        <Header />
-        <Outlet />
-        <Footer/>
-      </div>
+      <Dark.Provider value={{ darkMode: isDarkMode }}>
+        <div>
+          <Header toggleMode={handleClick} mode={isDarkMode} />
+          <Outlet />
+          <Footer />
+        </div>
+      </Dark.Provider>
     );
   };
   const appRouter = createBrowserRouter([
@@ -45,7 +54,7 @@ function App() {
 
   return (
     <div className="">
-      <RouterProvider router={appRouter} /> 
+      <RouterProvider router={appRouter} />
     </div>
   );
 }

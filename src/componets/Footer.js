@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useContext } from "react";
+import Dark from "../utilis/Dark";
 
 const Footer = () => {
-  return (
-    <div className="dark">
-        <div className= "h-8  dark:bg-slate-900">
-            <p className="font-mono mx-[600px] dark:text-slate-300 text-slate-500">Designed by Md Armaan</p>
-        </div>
-    </div>
-  )
-}
+  const mode = useContext(Dark);
+  const dark = mode.darkMode;
 
-export default Footer
+  return (
+    <div className={`${dark && "dark"}`}>
+      <div className="h-8  dark:bg-slate-900">
+        <p className="font-mono ml-[700px] dark:text-slate-300 text-slate-500">
+          Designed by Md Armaan
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;

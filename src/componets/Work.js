@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import Dark from "../utilis/Dark";
 
 const Work = () => {
+  const mode = useContext(Dark);
+  const dark = (mode.darkMode);
+
   return (
-    <div className="dark">
-      <div className="flex ml-40 p-10 dark:bg-slate-900">
-        <p className="mb-4 font-bold text-3xl w-2/12 my-2 mx-20">
+    <div className={`${dark && "dark"}`}>
+      <div className="flex p-10 dark:bg-slate-900">
+        <p className="mb-4 ml-40 dark:text-white font-bold text-3xl w-2/12 my-2 mx-20">
           Interested in work together?
         </p>
 
