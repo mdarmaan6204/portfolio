@@ -44,8 +44,8 @@ export const Contact = () => {
             </Alert>
           )}
         </div>
-        <div className="md:py-10 ">
-          <div className="dark:bg-white-800 rounded-xl h-lvh md:w-5/12 w-8/12 mx-auto shadow-xl bg-teal-200 hover:bg-teal-300">
+        <div className="md:py-10">
+          <div className="dark:bg-white-800 rounded-xl  md:w-5/12 w-11/12 mx-auto shadow-xl bg-teal-200 hover:bg-teal-300">
             <form ref={form} onSubmit={sendEmail} className="py-8">
               <label className="m-8 text-xl font-bold">
                 Name : </label>
@@ -66,19 +66,20 @@ export const Contact = () => {
               />
               <br/>
               <label className="m-8 text-xl font-bold">
-                Mobile No. : </label>
+                Phone : </label>
+                <br/>
               <input
                 type="number"
                 name="from_mob"
-                className="md:mx-8 -mx-2 rounded-lg md:my-10 my-4 md:w-96 w-52 h-12 border border-black p-4 hover:border-2 hover:bg-slate-100 font-medium font-serif"
+                className="md:mx-8 mx-12 rounded-lg md:my-10 my-4 md:w-96 w-52 h-12 border border-black p-4 hover:border-2 hover:bg-slate-100 font-medium font-serif"
                 required
               />
               <br />
-              <div className="flex justify-items-center">
-                <label className="m-4 p-4 text-xl font-bold ">Message : </label>
+              <div className="md:flex justify-items-center">
+                <label className="m-4 p-4 text-xl font-bold ">Message: </label>
                 <textarea
                   name="message"
-                  className="md:mx-8 mx-5 rounded-lg mb-10 md:w-96 w-52 md:h-40 h-52 border border-black p-4 hover:border-2 hover:bg-slate-100 font-medium font-serif"
+                  className="mx-8 rounded-lg mb-10 md:mt-0 mt-4 md:w-96 w-72 md:h-40 h-52 border border-black p-4 hover:border-2 hover:bg-slate-100 font-medium font-serif"
                   placeholder="Write your message..."
                   required
                 />
