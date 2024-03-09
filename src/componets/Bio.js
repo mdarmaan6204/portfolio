@@ -17,14 +17,14 @@ import Armaan_Pic from "../utilis/Armaan.jpg"
 const Bio = () => {
   return (
     <div className="-mt-28 dark:text-white">
-      <div className="w-2/3 m-auto my-28 p-4">
-        <div className="flex justify-between m-4">
-          <div className="w-4/12 my-6 ml-20">
-            <p className="text-5xl font-extrabold my-6">
+      <div className="md:w-2/3 my-28 md:p-2 p-1">
+        <div className="flex justify-between md:m-4">
+          <div className="md:w-4/12 w-10/12 my-6 md:ml-20 ml-8">
+            <p className="text-3xl md:text-5xl font-extrabold my-6">
               Front-end Web Developer
             </p>
             <p className="font-serif my-2">
-              Hi , I'm <span className="font-extrabold text-lg text-">Md Armaan</span>. A passionate Front-end Web Devopment based in
+              Hi , I'm <span className="font-extrabold text-lg">Md Armaan</span>. A passionate Front-end Web Devopment based in
               Dhanbad , Jharkhand.
             </p>
             <div className="flex">
@@ -39,40 +39,39 @@ const Bio = () => {
               </Link>
             </div>
           </div>
-
           <div className="my-6">
             <img
-              className="h-80 border rounded-full mr-40 shadow-2xl "
+              className="border max-h-80 rounded-full md:mr-40 mr-20 mt-8 md:-mt-8 shadow-2xl "
               src={Armaan_Pic}
               alt="profile"
             />
           </div>
         </div>
-        <div className="mx-24 flex">
+        <div className="md:mx-24 mx-6 flex">
           <pre className="font-extrabold">Tech Stack |</pre>
           <ul className="flex justify">
-            <li className="my-1 mx-4">
+            <li className="my-1 md:mx-4 mx-2">
               <img alt="html" className="h-5  dark:bg-white dark:rounded-sm" src={HTML_ICON} title="HTML"
               ></img>
             </li>
 
-            <li className="my-1 mx-4">
+            <li className="my-1 md:mx-4 mx-2">
               <img alt="css" className="h-5" src={CSS_ICON} title="CSS"></img>
             </li>
-            <li className="my-1 mx-8">
+            <li className="my-1 md:mx-4 mx-2">
               <img alt="js" className="h-5" src={JS_ICON} title="Javascript"
               ></img>
             </li>
 
-            <li className="my-1 mx-4">
+            <li className="my-1 md:mx-4 mx-2">
               <img alt="react" className="h-5" src={REACT_ICON} title="React"
               ></img>
             </li>
-            <li className="my-1 mx-4">
+            <li className="my-1 md:mx-4 mx-2">
               <img alt="redux" className="h-5" src={REDUX_ICON} title="Redux Toolkit"
               ></img>
             </li>
-            <li className="my-1 mx-4">
+            <li className="my-1 md:mx-4 mx-2">
               <img alt="tw" className="h-5" src={TAILWIND_ICON} title="Tailwind CSS"
               ></img>
             </li>
