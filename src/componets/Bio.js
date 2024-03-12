@@ -16,8 +16,8 @@ import Armaan_Pic from "../utilis/Armaan.jpg"
 
 const Bio = () => {
   return (
-    <div className="-mt-28 dark:text-white">
-      <div className="md:w-2/3 my-28 md:p-2 p-1">
+    <div className="-mt-28 dark:text-white ">
+      <div className="md:w-2/3 my-28 md:p-2 md:mx-auto p-1">
         <div className="flex justify-between md:m-4">
           <div className="md:w-4/12 w-10/12 my-6 md:ml-20 ml-8">
             <p className="text-3xl md:text-5xl font-extrabold my-6">
